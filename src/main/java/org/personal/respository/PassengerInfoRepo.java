@@ -8,12 +8,12 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-// public interface PassengerInfoRepo extends JpaRepository<PassengerInfo, Long>
-// {
-public class PassengerInfoRepo {
-    List<PassengerInfo> passengers = new ArrayList();
+public interface PassengerInfoRepo extends JpaRepository<PassengerInfo, Long>
+{
+// public class PassengerInfoRepo {
+//     List<PassengerInfo> passengers = new ArrayList();
 
-    public void save(PassengerInfo passengerInfo) {
-        passengers.add(passengerInfo);
-    }
+//     public void save(PassengerInfo passengerInfo) {
+//         passengers.add(passengerInfo);
+//     }
 }
