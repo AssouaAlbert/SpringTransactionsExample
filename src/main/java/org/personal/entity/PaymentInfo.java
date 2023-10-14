@@ -1,7 +1,5 @@
 package org.personal.entity;
 
-
-import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -23,7 +21,7 @@ public class PaymentInfo {
     @GenericGenerator(name = "uuid2", strategy = "org.herbernate.id.UUIDGenerator")
     private String paymentId;
     private String accountNo;
-    private double amount;
+    private Double amount;
     private String cardType;
     private Long passengerId;
 }

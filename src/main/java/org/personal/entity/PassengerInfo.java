@@ -24,10 +24,10 @@ public class PassengerInfo {
     private String name;
     private String email;
     private String source;
-    private String Destination;
+    private String destination;
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "DD-MM-YYYY")
     private Date travekDate;
     private String pikupTime;
     private String arrivalTime;
-    private double fare;
+    private Double fare;
 }
